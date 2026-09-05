@@ -1,6 +1,6 @@
 CC := gcc
 PGDIR := code
-SRCS := $(PGDIR)/calculator.c $(PGDIR)/guessing_game.c $(PGDIR)/program_loader.c $(PGDIR)/average.c
+SRCS := $(PGDIR)/calculator.c $(PGDIR)/guessing_game.c $(PGDIR)/program_loader.c $(PGDIR)/average.c $(PGDIR)/transformations.c
 OBJS := $(SRCS:.c=.o)
 
 .PHONY: build clean

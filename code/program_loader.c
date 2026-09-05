@@ -3,11 +3,12 @@
 extern void calculator();
 extern void guessing_game();
 extern void average();
+extern void transformations();
 int main(){
     int program;
     while(1==1){
         printf("\n-----------------------------------\n\n");
-        printf("\n\n1/Exit \n2/guessing_game \n3/calculator \n4/average  \n\nEnter: ");
+        printf("\n\n1/Exit \n2/guessing_game \n3/calculator \n4/average\n5/Transformations  \n\nEnter: ");
         scanf("%d",&program);
         printf("-----------------------------------\n\n");
         switch(program){
@@ -20,9 +21,12 @@ int main(){
             case 3:
                 calculator();
             break;
-	    case 4:
-		average();
-	    break;
+	    	case 4:
+				average();
+	    	break;
+			case 5:
+				transformations();
+			break;
         }
     }
     
