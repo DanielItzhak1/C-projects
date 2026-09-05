@@ -1,9 +1,9 @@
 ## Dependencies
-- gcc
+- Any C compiler
 - make
 ## Instalation
-- Run ``` make build ```
+- Run ``` make build CC=YourCCompiler```
 - Wait until it's finished compiling
 - run program_loader
 ## Note
-This program can run on windows and linux; however, the ``` make clear ``` command will not work on windows.
+This program can run on Windows and Linux; however, the ``` make clear ``` command will not work on windows.
