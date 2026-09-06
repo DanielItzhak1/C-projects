@@ -16,7 +16,7 @@ int transformations(){
 // Getting x and y
 	do{
 		char correct;
-		printf("Insert x value: ");
+		printf("\nInsert x value: ");
 		scanf("%d", &xVal);
 		printf("Insert y value: ");
 		scanf("%d", &yVal);
@@ -26,9 +26,7 @@ int transformations(){
 			case 'y':
 				repeat=1;
 			break;
-			case 'n':
-				repeat=0;
-			break;
+			repeat=0;
 		}
 	}while(repeat!=1);
 	repeat--;
@@ -61,6 +59,16 @@ void translation(int xAxis,int yAxis){
 void reflection(int xAxis,int yAxis){
 	char axis;
 	printf("What axis?: ");
+	scanf("%s", &axis);
+	
+	switch(axis){
+		case 'x':
+			printf("(%d, %d)->(%d, %d)", xAxis, yAxis, xAxis, yAxis * -1);
+		break;
+		case 'y':
+			printf("(%d, %d)->(%d, %d)", xAxis, yAxis, xAxis * -1, yAxis);
+		break;
+	}
 	return;
 }
 
