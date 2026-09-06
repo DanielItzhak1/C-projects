@@ -47,12 +47,20 @@ int transformations(){
 }
 //Functions
 void translation(int xAxis,int yAxis){
-	
+	int xaxis;
+	int yaxis;
+	printf("Moving x-axis by how much?: ");
+	scanf("%d", &xaxis);
+	printf("Moving y-axis by how much?: ");
+	scanf("%d", &yaxis);
+
+	printf("(%d, %d)->(%d, %d)", xAxis, yAxis, xAxis + xaxis, yAxis + yaxis);
 	return;
 }
 
 void reflection(int xAxis,int yAxis){
-	
+	char axis;
+	printf("What axis?: ");
 	return;
 }
 
