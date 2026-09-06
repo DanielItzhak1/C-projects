@@ -34,7 +34,7 @@ int transformations(){
 	do{
 		printf("\n1.Translation\n2.Reflection\n3.Rotation\nInsert a number between 1-3: ");
 		scanf("%d", &operation);
-		printf("\n");
+		//printf("\n");
 		if(operation > 0 && operation < 4){
 			repeat=1;
 		}
@@ -52,7 +52,7 @@ void translation(int xAxis,int yAxis){
 	printf("Moving y-axis by how much?: ");
 	scanf("%d", &yaxis);
 
-	printf("(%d, %d)->(%d, %d)", xAxis, yAxis, xAxis + xaxis, yAxis + yaxis);
+	printf("\n(%d, %d)->(%d, %d)\n", xAxis, yAxis, xAxis + xaxis, yAxis + yaxis);
 	return;
 }
 
@@ -63,16 +63,30 @@ void reflection(int xAxis,int yAxis){
 	
 	switch(axis){
 		case 'x':
-			printf("(%d, %d)->(%d, %d)", xAxis, yAxis, xAxis, yAxis * -1);
+			printf("\n(%d, %d)->(%d, %d)\n", xAxis, yAxis, xAxis, yAxis * -1);
 		break;
 		case 'y':
-			printf("(%d, %d)->(%d, %d)", xAxis, yAxis, xAxis * -1, yAxis);
+			printf("\n(%d, %d)->(%d, %d)\n", xAxis, yAxis, xAxis * -1, yAxis);
 		break;
 	}
 	return;
 }
 
 void rotation(int xAxis,int yAxis){
-	
+	int degrees;
+	printf("\n1. 90cw-270ccw\n2.180cw-180ccw \n3. 270cw-90ccw\nInsert a number between 1-3: ");
+	scanf("%d", &degrees);
+	switch(degrees){
+		case 1:
+			printf("\n(%d, %d)->(%d, %d)\n", xAxis, yAxis, yAxis, xAxis * -1);
+		break;
+		case 2:
+			printf("\n(%d, %d)->(%d, %d)\n", xAxis, yAxis, xAxis * -1, yAxis * -1);
+		break;
+		case 3:
+			printf("\n(%d, %d)->(%d, %d)\n", xAxis, yAxis, yAxis * -1, xAxis);
+		break;
+	}
+
 	return;
 }
