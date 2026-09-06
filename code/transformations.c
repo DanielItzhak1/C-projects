@@ -34,7 +34,6 @@ int transformations(){
 	do{
 		printf("\n1.Translation\n2.Reflection\n3.Rotation\nInsert a number between 1-3: ");
 		scanf("%d", &operation);
-		//printf("\n");
 		if(operation > 0 && operation < 4){
 			repeat=1;
 		}
