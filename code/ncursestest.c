@@ -3,7 +3,7 @@
 int ncursestest(){
 	initscr();
 	
-	printw("5");
+	printw("IT IS WORKING!!!!");
 
 	getch();
 
