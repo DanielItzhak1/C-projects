@@ -36,11 +36,9 @@ int main(){
 		break;
 	case 6:
 		lettersTyped();
-		return 0;
 		break;
 	case 7:
 		pickCharacter();
-		return 0;
 		break;
         }
     }

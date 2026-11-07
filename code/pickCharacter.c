@@ -3,6 +3,8 @@
 int pickCharacter(){
 	char ch = 'a';
 	initscr();
+	clear();
+	refresh();
 	nodelay(stdscr,TRUE);
 
 	while(getch() == ERR){
@@ -17,11 +19,8 @@ int pickCharacter(){
 		refresh();
 	}
 	nodelay(stdscr,FALSE);
-	clear();
-	printw("Your character is: %c!!!",ch);
-	refresh();
-	getch();
 	
 	endwin();
+	printf("Your character is: %c!!!\n",ch);
 	return 0;
 }
