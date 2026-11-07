@@ -5,6 +5,7 @@ extern void guessing_game();
 extern void average();
 extern void transformations();
 extern void lettersTyped();
+extern void pickCharacter();
 
 int main(){
     int program;
@@ -12,7 +13,8 @@ int main(){
         printf("\n-----------------------------------\n\n");
 
         printf("\n\n1/Exit\n2/guessing_game\n3/calculator\n4/average\n5/Transformations\n");
-	printf("\nNCURSES PROJECTS: \n6/Letters Typed\n\nEnter: ");
+	printf("\nNCURSES PROJECTS:\n6/Letters Typed\n7/Pick Your Character");
+	printf("\n\nEnter: ");
         scanf("%d",&program);
         
 	printf("-----------------------------------\n\n");
@@ -34,6 +36,10 @@ int main(){
 		break;
 	case 6:
 		lettersTyped();
+		return 0;
+		break;
+	case 7:
+		pickCharacter();
 		return 0;
 		break;
         }
