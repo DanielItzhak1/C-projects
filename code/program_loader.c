@@ -4,15 +4,18 @@ extern void calculator();
 extern void guessing_game();
 extern void average();
 extern void transformations();
-extern void ncursestest();
+extern void lettersTyped();
 
 int main(){
     int program;
     while(1==1){
         printf("\n-----------------------------------\n\n");
-        printf("\n\n1/Exit\n2/guessing_game\n3/calculator\n4/average\n5/Transformations\n6/ncurses testing(wip)\n\nEnter: ");
+
+        printf("\n\n1/Exit\n2/guessing_game\n3/calculator\n4/average\n5/Transformations\n");
+	printf("\nNCURSES PROJECTS: \n6/Letters Typed\n\nEnter: ");
         scanf("%d",&program);
-        printf("-----------------------------------\n\n");
+        
+	printf("-----------------------------------\n\n");
 	switch(program){
 	case 1:
 		return 0;
@@ -30,7 +33,8 @@ int main(){
 		transformations();
 		break;
 	case 6:
-		ncursestest();
+		lettersTyped();
+		return 0;
 		break;
         }
     }
